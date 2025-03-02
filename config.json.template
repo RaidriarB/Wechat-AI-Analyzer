@@ -1,0 +1,6 @@
+{
+    "api_key": "your-api-key-here",
+    "output_dir": "output",
+    "prompts_dir": "prompts",
+    "max_workers": 10
+}
