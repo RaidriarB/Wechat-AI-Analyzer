@@ -8,6 +8,9 @@
 - 生成用户性格特征和行为模式分析
 - 支持大规模聊天记录的分块处理
 
+![](imgs/1.png)
+![](imgs/2.png)
+
 ## 安装要求
 
 - Python3
@@ -34,6 +37,8 @@ pip install -r requirements.txt
     "max_workers": 10
 }
 ```
+
+然后，通过工具导出xlsx格式的聊天记录（记得筛出自己的聊天记录部分）
 
 ### 2. 运行程序
 
@@ -70,29 +75,7 @@ python main.py -i chat.xls -S -t 10 -m 30000
   - 聊天记录1000-5000条： -m 10000 -t 15
   - 聊天记录5000-10000条： -m 15000 -t 20
 
-
-
-
-## 贡献
-
-欢迎提交问题和改进建议！如果你想贡献代码：
-
-1. Fork 该仓库
-2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
-
-## 许可证
-
-该项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详细信息
-
-## 联系方式
-
-如果你有任何问题或建议，欢迎提出 Issue 或直接联系我。
-
-## 输出目录结构
-
+## 输出
 ```
 output/
 ├── chunks/                 # 分块处理目录
@@ -104,3 +87,4 @@ output/
 ├── summary.json           # 总体分析汇总
 └── {用户ID}_profile.json  # 用户画像文件
 ```
+
